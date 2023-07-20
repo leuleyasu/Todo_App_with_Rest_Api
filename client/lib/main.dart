@@ -1,7 +1,10 @@
 
-
+import 'package:client/Screen/HomeScreen.dart';
+import 'package:client/Screen/addtask.dart';
 import 'package:client/home.dart';
 import 'package:flutter/material.dart';
+
+import 'Screen/Todolist.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +17,7 @@ class MyApp extends StatefulWidget {
   State<MyApp> createState() => _MyAppState();
 }
 class _MyAppState extends State<MyApp> {
-  List<dynamic>users=[];
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,7 +27,12 @@ class _MyAppState extends State<MyApp> {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-   home: const  Home(),
+  routes: {
+    '/':(context)=>Todo(),
+    '/Homescreen':(context)=>HomeScreen(),
+    '/AddTodo':(context)=>AddTask(),
+
+  },
     );
   }
 
