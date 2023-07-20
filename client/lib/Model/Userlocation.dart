@@ -37,7 +37,7 @@ class Location {
       city: map['city'] as String,
       state: map['state'] as String,
       country: map['country'] as String,
-      postcode: int.parse(map['postcode'] ) as String,
+      postcode: map['postcode'] as String,
       lcncordinate: Locationcordinate.fromMap(map['coordinates'] as Map<String,dynamic>),
       tizonecdt: LocationTimeZonecordinate.fromMap(map['timezone'] as Map<String,dynamic>),
       street: Street.fromMap(map['street'] as Map<String,dynamic>),

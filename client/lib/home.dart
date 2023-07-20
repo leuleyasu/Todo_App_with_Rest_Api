@@ -33,14 +33,13 @@ class _HomeState extends State<Home> {
           (context,index){
             final  user=users[index];
             final email=user.email;
-            // final name =user['name']['first'];
-            // final img=user['picture']['thumbnail'];
+
 
 return ListTile(
-  // trailing:  CircleAvatar(
-  //   child: ClipRRect(
-  //     borderRadius: BorderRadius.circular(180),
-  //     child: Image.network(img)),
+  //  trailing:  CircleAvatar(
+    // child: ClipRRect(
+    //   borderRadius: BorderRadius.circular(180),
+    //   child: Image.network(img)),
 
   // ),
   // leading: CircleAvatar(
